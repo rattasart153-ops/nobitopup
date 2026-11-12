@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nobi Gaming</title>
+<meta name="description" content="ร้านเติมเกม Nobi Gaming สั่งซื้อได้โดยไม่ต้องสมัครสมาชิก ชำระผ่าน QR แล้วส่งสลิปให้แอดมินตรวจสอบ (หน้าตัวอย่าง)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600&family=Noto+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14123A; --ink-2:#1D1A52; --ink-3:#28246B; --line:#3A3680;
+  --gold:#FFC53D; --coral:#FF6B5B; --mint:#4FE3B8; --paper:#FFF3D1; --paper-ink:#2A2147;
+  --text:#F3F1FF; --muted:#B3AFE0;
+  --display:"Mitr","Noto Sans Thai",system-ui,sans-serif;
+  --body:"Noto Sans Thai",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(20,18,58,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px;height:60px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:600;font-size:1.25rem;text-decoration:none}
+.coin{width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFE08A,var(--gold) 55%,#E09A00);box-shadow:inset 0 0 0 3px #E8A500,inset 0 0 0 5px rgba(255,255,255,.35);display:grid;place-items:center;color:#8A5A00;font-family:var(--display);font-size:.9rem}
+.top nav{margin-left:auto;display:flex;gap:6px}
+.top nav a{padding:8px 12px;border-radius:999px;text-decoration:none;color:var(--muted);font-size:.95rem}
+.top nav a:hover{color:var(--text);background:var(--ink-2)}
+#memberArea{display:flex;align-items:center;gap:8px}
+.member-btn{border:1px solid var(--line);background:var(--ink-2);border-radius:999px;padding:6px 14px;cursor:pointer;white-space:nowrap}
+.member-btn:hover{border-color:var(--gold)}
+.who-chip{color:var(--mint);font-size:.95rem;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:700px){.top nav{display:none}#memberArea{margin-left:auto}}
+
+/* hero */
+.hero{padding:52px 0 20px}
+.hero h1{font-family:var(--display);font-weight:500;font-size:clamp(2.1rem,6vw,3.6rem);line-height:1.22;margin:0 0 14px;max-width:22ch}
+.hero p{margin:0;color:var(--muted);max-width:56ch;font-size:1.05rem}
